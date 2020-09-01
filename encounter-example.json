@@ -1,0 +1,47 @@
+{
+  "resourceType": "Encounter",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.rathhospital.com/identifiers/encounters",
+      "value": "v6751"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "AMB"
+  },
+  "subject": {
+    "reference": "Patient/302",
+    "display": "นาย สมชาย ใจดี"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "PPRF",
+              "display": "primary performer"
+            }
+          ],
+          "text": "primary performer"
+        }
+      ],
+      "period": {
+        "start": "2020-08-31T07:20:00+07:00",
+        "end": "2020-08-31T07:01:00+07:00"
+      },
+      "individual": {
+        "reference": "Practitioner/304",
+        "display": "พญ. สมหญิง จริงใจ"
+      }
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/303",
+    "display": "โรงพยาบาลขอนแก่น"
+  }
+}

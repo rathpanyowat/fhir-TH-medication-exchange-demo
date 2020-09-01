@@ -1,0 +1,65 @@
+{
+  "resourceType": "MedicationRequest",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.rathhospital.com/identifiers/medicatonRequest",
+      "value": "o6751"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.this.or.th/tmt",
+        "code": "120496",
+        "display": "ARCOXIA (MERCK, U.S.A.) (etoricoxib 60 mg) film-coated tablet, 1 tablet (TPU)"
+      }
+    ],
+    "text": "ARCOXIA (MERCK, U.S.A.) (etoricoxib 60 mg) film-coated tablet, 1 tablet (TPU)"
+  },
+  "subject": {
+    "reference": "Patient/302",
+    "display": "นาย สมชาย ใจดี"
+  },
+  "encounter": {
+    "reference": "Encounter/305"
+  },
+  "authoredOn": "2020-08-31T07:11:00+07:00",
+  "requester": {
+    "reference": "Practitioner/304",
+    "display": "พญ. สมหญิง จริงใจ"
+  },
+  "dosageInstruction": [
+    {
+      "sequence": 1,
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1.0,
+          "periodUnit": "d"
+        }
+      },
+      "asNeededBoolean": false,
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 60.0,
+            "unit": "milligram",
+            "code": "mg",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ]
+    }
+  ],
+  "dispenseRequest": {
+    "initialFill": {
+      "quantity": {
+        "value": 30.0,
+        "unit": "tablet"
+      }
+    }
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:744bd249-fbd7-4ae5-92de-c9806ead56c7",
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://thai.go.th/codesystem/identifier",
+                  "code": "ID",
+                  "display": "Thai Identification Number"
+                }
+              ],
+              "text": "เลขประจำตัวประชาชนไทย"
+            },
+            "system": "http://thai.go.th/thai-id",
+            "value": "1000000000999"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://thai.go.th/codesystem/identifier",
+                  "code": "MR",
+                  "display": "Medical Record Number"
+                }
+              ],
+              "text": "Medical Record Number"
+            },
+            "system": "http://rathhospital.com/hn",
+            "value": "62-5666"
+          },
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://thai.go.th/codesystem/identifier",
+                  "code": "PPN",
+                  "display": "Passport Number"
+                }
+              ],
+              "text": "Passport Number"
+            },
+            "system": "http://thai.go.th/thai-passport",
+            "value": "X87660005X"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "ใจดี",
+            "given": [
+              "สมชาย"
+            ],
+            "prefix": [
+              "นาย"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0889998888",
+            "use": "mobile"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1945-01-03",
+        "address": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                "extension": [
+                  {
+                    "url": "latitude",
+                    "valueDecimal": 41.62853299580235
+                  },
+                  {
+                    "url": "longitude",
+                    "valueDecimal": -70.26833403203315
+                  }
+                ]
+              }
+            ],
+            "line": [
+              "300 ถ.พหลโยธิน"
+            ],
+            "city": "พญาไท",
+            "state": "กรุงเทพมหานคร",
+            "postalCode": "10140",
+            "country": "TH"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+              "code": "S",
+              "display": "Never Married"
+            }
+          ],
+          "text": "Never Married"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient?identifier=http://thai.go.th/thai-id|1000000000999"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9fda83d0-874c-4cfd-b11f-f9b238684ef8",
+      "resource": {
+        "resourceType": "Organization",
+        "identifier": [
+          {
+            "system": "http://demo.thai-hospital-database.go.th",
+            "value": "KK0001"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "โรงพยาบาลขอนแก่น",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "043236974"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "54 ถ.ศรีจันทร์ ต.ในเมือง"
+            ],
+            "city": "เมืองขอนแก่น",
+            "state": "ขอนแก่น",
+            "postalCode": "40000",
+            "country": "TH"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization?identifier=http://demo.thai-hospital-database.go.th|KK0001"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:abfa9a18-6ee5-4034-b797-0f2c79fd24cd",
+      "resource": {
+        "resourceType": "Practitioner",
+        "identifier": [
+          {
+            "system": "http://thai-medical-council.or.th/doctor-id",
+            "value": "99999"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "จริงใจ",
+            "given": [
+              "สมหญิง"
+            ],
+            "prefix": [
+              "พญ."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "somying.jingjai@example.com",
+            "use": "work"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner?identifier=http://thai-medical-council.or.th/doctor-id|99999"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bff22ce5-bb93-40aa-8aa6-4ca41592b0af",
+      "resource": {
+        "resourceType": "Encounter",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "http://www.rathhospital.com/identifiers/encounters",
+            "value": "v6751"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "urn:uuid:744bd249-fbd7-4ae5-92de-c9806ead56c7",
+          "display": "นาย สมชาย ใจดี"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                    "code": "PPRF",
+                    "display": "primary performer"
+                  }
+                ],
+                "text": "primary performer"
+              }
+            ],
+            "period": {
+              "start": "2020-08-31T07:20:00+07:00",
+              "end": "2020-08-31T07:01:00+07:00"
+            },
+            "individual": {
+              "reference": "urn:uuid:abfa9a18-6ee5-4034-b797-0f2c79fd24cd",
+              "display": "พญ. สมหญิง จริงใจ"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:9fda83d0-874c-4cfd-b11f-f9b238684ef8",
+          "display": "โรงพยาบาลขอนแก่น"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Encounter?identifier=http://www.rathhospital.com/identifiers/encounters|v6751"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5605876d-cffd-4eb2-92d0-29e8245302d0",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "http://www.rathhospital.com/identifiers/medicatonRequest",
+            "value": "o6751"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.this.or.th/tmt",
+              "code": "120496",
+              "display": "ARCOXIA (MERCK, U.S.A.) (etoricoxib 60 mg) film-coated tablet, 1 tablet (TPU)"
+            }
+          ],
+          "text": "ARCOXIA (MERCK, U.S.A.) (etoricoxib 60 mg) film-coated tablet, 1 tablet (TPU)"
+        },
+        "subject": {
+          "reference": "urn:uuid:744bd249-fbd7-4ae5-92de-c9806ead56c7",
+          "display": "นาย สมชาย ใจดี"
+        },
+        "encounter": {
+          "reference": "urn:uuid:bff22ce5-bb93-40aa-8aa6-4ca41592b0af"
+        },
+        "authoredOn": "2020-08-31T07:11:00+07:00",
+        "requester": {
+          "reference": "urn:uuid:abfa9a18-6ee5-4034-b797-0f2c79fd24cd",
+          "display": "พญ. สมหญิง จริงใจ"
+        },
+        "dosageInstruction": [
+          {
+            "sequence": 1,
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1.0,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": false,
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 60.0,
+                  "unit": "milligram",
+                  "code": "mg",
+                  "system": "http://unitsofmeasure.org"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "initialFill": {
+            "quantity": {
+              "value": 30.0,
+              "unit": "tablet"
+            }
+          }
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest?identifier=http://www.rathhospital.com/identifiers/medicatonRequest|o6751"
+      }
+    }
+  ]
+}

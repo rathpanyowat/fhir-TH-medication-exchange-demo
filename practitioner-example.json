@@ -1,0 +1,29 @@
+{
+  "resourceType": "Practitioner",
+  "identifier": [
+    {
+      "system": "http://thai-medical-council.or.th/doctor-id",
+      "value": "99999"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "จริงใจ",
+      "given": [
+        "สมหญิง"
+      ],
+      "prefix": [
+        "พญ."
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "somying.jingjai@example.com",
+      "use": "work"
+    }
+  ],
+  "gender": "female"
+}

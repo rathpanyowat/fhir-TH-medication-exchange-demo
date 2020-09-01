@@ -1,0 +1,107 @@
+{
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://thai.go.th/codesystem/identifier",
+            "code": "ID",
+            "display": "Thai Identification Number"
+          }
+        ],
+        "text": "เลขประจำตัวประชาชนไทย"
+      },
+      "system": "http://thai.go.th/thai-id",
+      "value": "1000000000999"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://thai.go.th/codesystem/identifier",
+            "code": "MR",
+            "display": "Medical Record Number"
+          }
+        ],
+        "text": "Medical Record Number"
+      },
+      "system": "http://rathhospital.com/hn",
+      "value": "62-5666"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://thai.go.th/codesystem/identifier",
+            "code": "PPN",
+            "display": "Passport Number"
+          }
+        ],
+        "text": "Passport Number"
+      },
+      "system": "http://thai.go.th/thai-passport",
+      "value": "X87660005X"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "ใจดี",
+      "given": [
+        "สมชาย"
+      ],
+      "prefix": [
+        "นาย"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0889998888",
+      "use": "mobile"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1945-01-03",
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 41.62853299580235
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -70.26833403203315
+            }
+          ]
+        }
+      ],
+      "line": [
+        "300 ถ.พหลโยธิน"
+      ],
+      "city": "พญาไท",
+      "state": "กรุงเทพมหานคร",
+      "postalCode": "10140",
+      "country": "TH"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "code": "S",
+        "display": "Never Married"
+      }
+    ],
+    "text": "Never Married"
+  }
+}

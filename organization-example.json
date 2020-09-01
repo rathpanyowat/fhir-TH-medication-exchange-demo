@@ -1,0 +1,40 @@
+{
+  "resourceType": "Organization",
+  "identifier": [
+    {
+      "system": "http://demo.thai-hospital-database.go.th",
+      "value": "KK0001"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        }
+      ],
+      "text": "Healthcare Provider"
+    }
+  ],
+  "name": "โรงพยาบาลขอนแก่น",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "043236974"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "54 ถ.ศรีจันทร์ ต.ในเมือง"
+      ],
+      "city": "เมืองขอนแก่น",
+      "state": "ขอนแก่น",
+      "postalCode": "40000",
+      "country": "TH"
+    }
+  ]
+}
